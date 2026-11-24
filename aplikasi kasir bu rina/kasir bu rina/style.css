@@ -1,0 +1,27 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background: #f3f6f4; color: #1f2937; }
+.app-shell { display: flex; min-height: 100vh; }
+.sidebar { width: 250px; background: #ffffff; border-right: 1px solid #e5e7eb; padding: 24px 16px; display: flex; flex-direction: column; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; padding: 0 8px; }
+.brand-badge { width: 40px; height: 40px; background: #15803d; color: #fff; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+.nav-link { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 10px; text-decoration: none; color: #4b5563; font-weight: 500; margin-bottom: 6px; }
+.nav-link.active, .nav-link:hover { background: #dcfce7; color: #15803d; font-weight: 600; }
+.sidebar-note { background: #f8fafc; border: 1px solid #e2e8f0; padding: 14px; border-radius: 12px; font-size: 12px; color: #64748b; }
+.main { flex: 1; padding: 28px 36px; }
+.hero { background: linear-gradient(135deg, #166534, #15803d); color: #fff; padding: 28px; border-radius: 16px; margin-bottom: 24px; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+.stat-card { background: #fff; padding: 20px; border-radius: 14px; border: 1px solid #e5e7eb; }
+.stat-card h3 { font-size: 13px; color: #6b7280; margin-bottom: 6px; }
+.stat-card p { font-size: 24px; font-weight: bold; color: #111827; }
+.panel { background: #fff; border-radius: 16px; border: 1px solid #e5e7eb; padding: 24px; margin-bottom: 24px; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+th, td { text-align: left; padding: 14px 12px; border-bottom: 1px solid #f1f5f9; font-size: 14px; }
+th { color: #64748b; font-size: 12px; text-transform: uppercase; }
+.badge { padding: 4px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: #dcfce7; color: #15803d; }
+.btn { display: inline-block; padding: 10px 18px; border-radius: 10px; border: none; cursor: pointer; font-weight: 600; text-decoration: none; font-size: 14px; }
+.btn-primary { background: #15803d; color: #fff; }
+.btn-outline { background: #f1f5f9; color: #334155; }
+.product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 16px 0; }
+.product-item { border: 1px solid #e2e8f0; padding: 16px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; }
+input[type="text"], input[type="number"], select { width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; margin-top: 6px; }
+@media print { .no-print { display: none !important; } }
